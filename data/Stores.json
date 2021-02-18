@@ -1,0 +1,107 @@
+{
+"stores": [
+  {
+    "storeCode": "iseq2c",
+    "manager": {
+      "personCode": "qawm9j",
+      "lastName": "Smith",
+      "firstName": "Liam",
+      "address": {
+        "street": "851 Havenside Junction",
+        "city": "Miami",
+        "state": "FL",
+        "country": "US",
+        "zipCode": "33255"
+      },
+      "emails": [
+        "lsmith@lps.org",
+        "lsmith@huskers.unl.edu"
+      ]
+    },
+    "address": {
+      "street": "4151 Triangle Drive",
+      "city": "Miami:",
+      "state": "FL",
+      "country": "US",
+      "zipCode": "33238"
+    }
+  },
+    {
+    "storeCode": "d08qbz",
+    "manager": {
+      "personCode": "oqdfba",
+      "lastName": "Johnson",
+      "firstName": "Noah",
+      "address": {
+        "street": "184 Fletchers Way",
+        "city": "San Diego",
+        "state": "CA",
+        "country": "US",
+        "zipCode": "91945"
+      },
+      "emails": [
+        "njohnson@aol.com",
+        "njohnson@yahoo.com"
+      ]
+    },
+    "address": {
+      "street": "1942 Potter Lane",
+      "city": "San Diego",
+      "state": "CA",
+      "country": "US",
+      "zipCode": "92093"
+    }
+  },
+    {
+    "storeCode": "nk2mpe",
+    "manager": {
+      "personCode": "qawm9j",
+      "lastName": "Smith",
+      "firstName": "Liam",
+      "address": {
+        "street": "851 Havenside Junction",
+        "city": "Miami",
+        "state": "FL",
+        "country": "US",
+        "zipCode": "33255"
+      },
+      "emails": [
+        "lsmith@lps.org",
+        "lsmith@huskers.unl.edu"
+      ]
+    },
+    "address": {
+      "street": "851 Rocky Road Boulevard",
+      "city": "Rockford",
+      "state": "IL",
+      "country": "US",
+      "zipCode": "61125"
+    }
+  },
+    {
+    "storeCode": "7xtj2o",
+"manager": {
+      "personCode": "qawm9j",
+      "lastName": "Smith",
+      "firstName": "Liam",
+      "address": {
+        "street": "851 Havenside Junction",
+        "city": "Miami",
+        "state": "FL",
+        "country": "US",
+        "zipCode": "33255"
+      },
+      "emails": [
+        "lsmith@lps.org",
+        "lsmith@huskers.unl.edu"
+      ]
+    },
+    "address": {
+      "street": "312 Green Avenue",
+      "city": "Aspen",
+      "state": "CO",
+      "country": "US",
+      "zipCode": "81612"
+    }
+  }
+]}

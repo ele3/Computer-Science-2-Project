@@ -1,0 +1,129 @@
+{
+"persons": [
+  {
+    "personCode": "qawm9j",
+    "lastName": "Smith",
+    "firstName": "Liam",
+    "address": {
+      "street": "851 Havenside Junction",
+      "city": "Miami",
+      "state": "FL",
+      "country": "US",
+      "zipCode": "33255"
+    },
+    "emails": [
+      "lsmith@lps.org",
+      "lsmith@huskers.unl.edu"
+    ]
+  },
+  {
+    "personCode": "oqdfba",
+    "lastName": "Johnson",
+    "firstName": "Noah",
+    "address": {
+      "street": "184 Fletchers Way",
+      "city": "San Diego",
+      "state": "CA",
+      "country": "US",
+      "zipCode": "91945"
+    },
+    "emails": [
+      "njohnson@aol.com",
+      "njohnson@yahoo.com"
+    ]
+  },
+  {
+    "personCode": "rrdz9q",
+    "lastName": "Williams",
+    "firstName": "Oliver",
+    "address": {
+      "street": "12 Caesar's Way",
+      "city": "Rockford",
+      "state": "IL",
+      "country": "US",
+      "zipCode": "61102"
+    },
+    "emails": [
+      "owilliams@gmail.com",
+      "owilliams@drop.com"
+    ]
+  },
+  {
+    "personCode": "1kxxua",
+    "lastName": "Jones",
+    "firstName": "Jay",
+    "address": {
+      "street": "28 35th Alford Plac",
+      "city": "Miami",
+      "state": "FL",
+      "country": "US",
+      "zipCode": "33128"
+    },
+    "emails": [
+      "jjones@yahoo.com"
+    ]
+  },
+  {
+    "personCode": "kmt1e5",
+    "lastName": "Brown",
+    "firstName": "Alicia",
+    "address": {
+      "street": "941 Sheen Road",
+      "city": "San Diego",
+      "state": "CA",
+      "country": "US",
+      "zipCode": "92111"
+    },
+    "emails": [
+      "abrown@hotmail.com"
+    ]
+  },
+  {
+    "personCode": "qoxu6n",
+    "lastName": "Davis",
+    "firstName": "Anna",
+    "address": {
+      "street": "9515 Schofield Lane",
+      "city": "Rockford",
+      "state": "IL",
+      "country": "US",
+      "zipCode": "61125"
+    },
+    "emails": [
+      "adavis@bing.com",
+      "adavis@taobao.com",
+      "adavis@lps.org"
+    ]
+  },
+  {
+    "personCode": "2r0dav",
+    "lastName": "Miller",
+    "firstName": "Benjamin",
+    "address": {
+      "street": "60 Spinney Hill Road",
+      "city": "Aspen",
+      "state": "CO",
+      "country": "US",
+      "zipCode": "81612"
+    },
+    "emails": [
+      "bmiller@gmail.com",
+      "bmiller@ebay.com"
+    ]
+  }, 
+  {
+    "personCode": "rj3be0",
+    "lastName": "Wilson",
+    "firstName": "Jessica",
+    "address": {
+      "street": "234 Consort Avenue",
+      "city": "Aspen",
+      "state": "CO",
+      "country": "US",
+      "zipCode": "81612"
+    },
+    "emails": [
+      "jwilson@zoho.com"
+    ]
+  }
+]}

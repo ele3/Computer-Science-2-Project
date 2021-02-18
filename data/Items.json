@@ -1,0 +1,27 @@
+{
+"items": [
+  {
+    "basePrice": 299.99,
+    "itemCode": "8xz1ok",
+    "name": "Nintendo Switch"
+  },
+    {
+    "basePrice": 499.99,
+    "itemCode": "jc3jvi",
+    "name": "PlayStation 5"
+  },
+    {
+    "basePrice": 59.99,
+    "itemCode": "2lgcel",
+    "name": "Breath of the Wild (Digital Copy)"
+  },
+  {
+    "basePrice": 29.99,
+    "itemCode": "68u6od",
+    "name": "GTA V"
+  },
+    {
+    "itemCode": "b436dw",
+    "name": "Riot Points"
+  }
+]}
