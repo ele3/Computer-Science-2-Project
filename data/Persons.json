@@ -37,7 +37,7 @@
     "lastName": "Williams",
     "firstName": "Oliver",
     "address": {
-      "street": "12 Caesar's Way",
+      "street": "12 Caesars Way",
       "city": "Rockford",
       "state": "IL",
       "country": "US",
@@ -110,7 +110,7 @@
       "bmiller@gmail.com",
       "bmiller@ebay.com"
     ]
-  }, 
+  },
   {
     "personCode": "rj3be0",
     "lastName": "Wilson",

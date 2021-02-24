@@ -20,13 +20,13 @@
     },
     "address": {
       "street": "4151 Triangle Drive",
-      "city": "Miami:",
+      "city": "Miami",
       "state": "FL",
       "country": "US",
       "zipCode": "33238"
     }
   },
-    {
+  {
     "storeCode": "d08qbz",
     "manager": {
       "personCode": "oqdfba",
@@ -52,7 +52,7 @@
       "zipCode": "92093"
     }
   },
-    {
+  {
     "storeCode": "nk2mpe",
     "manager": {
       "personCode": "qawm9j",
@@ -78,9 +78,9 @@
       "zipCode": "61125"
     }
   },
-    {
+  {
     "storeCode": "7xtj2o",
-"manager": {
+    "manager": {
       "personCode": "qawm9j",
       "lastName": "Smith",
       "firstName": "Liam",

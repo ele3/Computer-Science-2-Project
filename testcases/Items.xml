@@ -1,0 +1,20 @@
+<items>
+	<NewProduct>
+		<itemCode>8xz1ok</itemCode>
+		<name>Nintendo Switch</name>
+		<basedPrice>299.99</basedPrice></NewProduct>
+	<NewProduct>
+		<itemCode>jc3jvi</itemCode>
+		<name>PlayStation 5</name>
+		<basedPrice>499.99</basedPrice></NewProduct>
+	<NewProduct>
+		<itemCode>2lgcel</itemCode>
+		<name>Breath of the Wild (Digital Copy)</name>
+		<basedPrice>59.99</basedPrice></NewProduct>
+	<UsedProduct>
+		<itemCode>b8u6od</itemCode>
+		<name>GTA V</name>
+		<basedPrice>29.99</basedPrice></UsedProduct>
+	<GiftCard>
+		<itemCode>b436dw</itemCode>
+		<name>Riot Points</name></GiftCard></items>

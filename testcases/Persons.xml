@@ -1,0 +1,103 @@
+<persons>
+	<Employee>
+		<personCode>qawm9j</personCode>
+		<lastName>Smith</lastName>
+		<firstName>Liam</firstName>
+		<address>
+			<street>851 Havenside Junction</street>
+			<city>Miami</city>
+			<state>FL</state>
+			<country>US</country>
+			<zipCode>33255</zipCode></address>
+		<emails>
+			<email>lsmith@lps.org</email>
+			<email>lsmith@huskers.unl.edu</email></emails></Employee>
+	<Employee>
+		<personCode>oqdfba</personCode>
+		<lastName>Johnson</lastName>
+		<firstName>Noah</firstName>
+		<address>
+			<street>184 Fletchers Way</street>
+			<city>San Diego</city>
+			<state>CA</state><country>US</country>
+			
+			<zipCode>91945</zipCode></address>
+		<emails>
+			<email>njohnson@aol.com</email>
+			<email>njohnson@yahoo.com</email></emails></Employee>
+	<PlatinumCustomer>
+		<personCode>rrdz9q</personCode>
+		<lastName>Williams</lastName>
+		<firstName>Oliver</firstName>
+		<address>
+			<street>12 Caesars Way</street>
+			<city>Rockford</city>
+			<state>IL</state>
+			<country>US</country>
+			<zipCode>61102</zipCode></address>
+		<emails>
+			<email>owilliams@gmail.com</email>
+			<email>owilliams@drop.com</email></emails></PlatinumCustomer>
+	<GoldCustomer>
+		<personCode>1kxxua</personCode>
+		<lastName>Jones</lastName>
+		<firstName>Jay</firstName>
+		<address>
+			<street>28 35th Alford Plac</street>
+			<city>Miami</city>
+			<state>FL</state><country>US</country>
+			<zipCode>33128</zipCode>
+		</address>
+		<emails>
+			<email>jjones@yahoo.com</email></emails></GoldCustomer>
+	<GoldCustomer>
+		<personCode>kmt1e5</personCode>
+		<lastName>Brown</lastName>
+		<firstName>Alicia</firstName>
+		<address>
+			<street>941 Sheen Road</street>
+			<city>San Diego</city>
+			<state>CA</state>
+			<country>US</country>
+			<zipCode>92111</zipCode></address>
+		<emails>
+			<email>abrown@hotmail.com</email></emails></GoldCustomer>
+	<GoldCustomer>
+		<personCode>qoxu6n</personCode>
+		<lastName>Davis</lastName>
+		<firstName>Anna</firstName>
+		<address>
+			<street>9515 Schofield Lane</street>
+			<city>Rockford</city>
+			<state>IL</state>
+			<country>US</country>
+			<zipCode>61125</zipCode></address>
+		<emails>
+			<email>adavis@bing.com</email>
+			<email>adavis@taobao.com</email>
+			<email>adavis@lps.org</email></emails></GoldCustomer>
+	<Customer>
+		<personCode>2r0dav</personCode>
+		<lastName>Miller</lastName>
+		<firstName>Benjamin</firstName>
+		<address>
+			<street>60 Spinney Hill Road</street>
+			<city>Aspen</city>
+			<state>CO</state>
+			<country>US</country>
+			<zipCode>81612</zipCode></address>
+		<emails>
+			<email>bmiller@gmail.com</email>
+			<email>bmiller@ebay.com</email></emails></Customer>
+	<Customer>
+		<personCode>rj3be0</personCode>
+		<lastName>Wilson</lastName>
+		<firstName>Jessica</firstName>
+		<address>
+			<street>234 Consort Avenue</street>
+			<city>Aspen</city>
+			<state>CO</state><country>US</country>
+			<zipCode>81612</zipCode>
+		</address>
+		<emails>
+			<email>jwilson@zoho.com</email></emails></Customer></persons>

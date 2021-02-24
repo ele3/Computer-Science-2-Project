@@ -1,81 +1,106 @@
 <stores>
-	<Store><storeCode>iseq2c</storeCode><manager>
-	<personCode>qawm9j</personCode>
-	<lastName>Smith</lastName>
-	<firstName>Liam</firstName>
-	<address>
-		<street>851 Havenside Junction</street>
-		<city>Miami</city><state>FL</state>
-		<country>US</country>
-		<zipCode>33255</zipCode></address>
-	<emails>
-		<email>lsmith@lps.org</email>
-		<email>lsmith@huskers.unl.edu</email></emails></manager><address>
-			<street>4151 Triangle Drive</street>
-			<city>Miami</city>
-			<state>FL</state>
-			<country>US</country>
-			<zipCode>33238</zipCode></address></Store>
-	<Store>
-		<storeCode>d08qbz</storeCode>
-		<manager>
-			<personCode>oqdfba</personCode>
-			<lastName>Johnson</lastName>
-			<firstName>Noah</firstName>
-			<address>
-				<street>184 Fletchers Way</street>
-				<city>San Diego</city>
-				<state>CA</state>
-				<country>US</country>
-				<zipCode>91945</zipCode></address>
-			<emails>
-				<email>njohnson@aol.com</email>
-				<email>njohnson@yahoo.com</email></emails></manager>
-		<address>
-			<street>1942 Potter Lane</street>
-			<city>San Diego</city>
-			<state>CA</state>
-			<country>US</country>
-			<zipCode>92093</zipCode></address></Store>
-	<Store>
-		<storeCode>nk2mpe</storeCode>
-		<manager>
-			<personCode>qawm9j</personCode>
-			<lastName>Smith</lastName>
-			<firstName>Liam</firstName>
-			<address>
-				<street>851 Havenside Junction</street>
-				<city>Miami</city>
-				<state>FL</state>
-				<country>US</country>
-				<zipCode>33255</zipCode></address>
-			<emails>
-				<email>lsmith@lps.org</email>
-				<email>lsmith@huskers.unl.edu</email></emails></manager>
-		<address>
-			<street>851 Rocky Road Boulevard</street>
-			<city>Rockford</city>
-			<state>IL</state>
-			<country>US</country>
-			<zipCode>61125</zipCode></address></Store>
-	<Store>
-		<storeCode>7xtj2o</storeCode>
-		<manager>
-			<personCode>qawm9j</personCode>
-			<lastName>Smith</lastName>
-			<firstName>Liam</firstName>
-			<address>
-				<street>851 Havenside Junction</street>
-				<city>Miami</city>
-				<state>FL</state><country>US</country>
-				<zipCode>33255</zipCode>
-				</address>
-			<emails>
-				<email>lsmith@lps.org</email>
-				<email>lsmith@huskers.unl.edu</email></emails></manager>
-		<address>
-			<street>312 Green Avenue</street>
-			<city>Aspen</city>
-			<state>CO</state>
-			<country>US</country>
-			<zipCode>81612</zipCode></address></Store></stores>
+<Store>
+  <storeCode>iseq2c</storeCode>
+  <manager>
+    <personCode>qawm9j</personCode>
+    <lastName>Smith</lastName>
+    <firstName>Liam</firstName>
+    <address>
+      <street>851 Havenside Junction</street>
+      <city>Miami</city>
+      <state>FL</state>
+      <country>US</country>
+      <zipCode>33255</zipCode>
+    </address>
+    <emails>
+      <string>lsmith@lps.org</string>
+      <string>lsmith@huskers.unl.edu</string>
+    </emails>
+  </manager>
+  <address>
+    <street>4151 Triangle Drive</street>
+    <city>Miami</city>
+    <state>FL</state>
+    <country>US</country>
+    <zipCode>33238</zipCode>
+  </address>
+</Store>
+<Store>
+  <storeCode>d08qbz</storeCode>
+  <manager>
+    <personCode>oqdfba</personCode>
+    <lastName>Johnson</lastName>
+    <firstName>Noah</firstName>
+    <address>
+      <street>184 Fletchers Way</street>
+      <city>San Diego</city>
+      <state>CA</state>
+      <country>US</country>
+      <zipCode>91945</zipCode>
+    </address>
+    <emails>
+      <string>njohnson@aol.com</string>
+      <string>njohnson@yahoo.com</string>
+    </emails>
+  </manager>
+  <address>
+    <street>1942 Potter Lane</street>
+    <city>San Diego</city>
+    <state>CA</state>
+    <country>US</country>
+    <zipCode>92093</zipCode>
+  </address>
+</Store>
+<Store>
+  <storeCode>nk2mpe</storeCode>
+  <manager>
+    <personCode>qawm9j</personCode>
+    <lastName>Smith</lastName>
+    <firstName>Liam</firstName>
+    <address>
+      <street>851 Havenside Junction</street>
+      <city>Miami</city>
+      <state>FL</state>
+      <country>US</country>
+      <zipCode>33255</zipCode>
+    </address>
+    <emails>
+      <string>lsmith@lps.org</string>
+      <string>lsmith@huskers.unl.edu</string>
+    </emails>
+  </manager>
+  <address>
+    <street>851 Rocky Road Boulevard</street>
+    <city>Rockford</city>
+    <state>IL</state>
+    <country>US</country>
+    <zipCode>61125</zipCode>
+  </address>
+</Store>
+<Store>
+  <storeCode>7xtj2o</storeCode>
+  <manager>
+    <personCode>qawm9j</personCode>
+    <lastName>Smith</lastName>
+    <firstName>Liam</firstName>
+    <address>
+      <street>851 Havenside Junction</street>
+      <city>Miami</city>
+      <state>FL</state>
+      <country>US</country>
+      <zipCode>33255</zipCode>
+    </address>
+    <emails>
+      <string>lsmith@lps.org</string>
+      <string>lsmith@huskers.unl.edu</string>
+    </emails>
+  </manager>
+  <address>
+    <street>312 Green Avenue</street>
+    <city>Aspen</city>
+    <state>CO</state>
+    <country>US</country>
+    <zipCode>81612</zipCode>
+  </address>
+</Store>
+</stores>
