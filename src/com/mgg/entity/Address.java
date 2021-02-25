@@ -1,4 +1,4 @@
-package com.mgg;
+package com.mgg.entity;
 
 /**
  * This class models an address, including a street, city, state, zip code, and country.

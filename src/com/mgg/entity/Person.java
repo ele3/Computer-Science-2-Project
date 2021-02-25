@@ -1,4 +1,4 @@
-package com.mgg;
+package com.mgg.entity;
 
 import java.util.ArrayList;
 

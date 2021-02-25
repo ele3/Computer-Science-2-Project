@@ -1,4 +1,4 @@
-package com.mgg;
+package com.mgg.entity;
 
 /**
  * This class models an item's information, including the item's

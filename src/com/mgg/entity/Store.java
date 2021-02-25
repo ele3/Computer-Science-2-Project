@@ -1,4 +1,4 @@
-package com.mgg;
+package com.mgg.entity;
 
 /**
  * This class models a store's information, including the storeCode,

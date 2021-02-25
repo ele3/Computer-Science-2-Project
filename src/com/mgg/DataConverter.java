@@ -1,5 +1,8 @@
 package com.mgg;
 
+import com.mgg.writer.JSONConverter;
+import com.mgg.writer.XMLConverter;
+
 /**
  * This program loads the data from the CSV files, parses said data, and 
  * then serializes the data into output files of XML and JSON.

@@ -1,4 +1,4 @@
-package com.mgg;
+package com.mgg.writer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,6 +6,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import com.thoughtworks.xstream.XStream;
+import com.mgg.entity.Person;
+import com.mgg.entity.Store;
+import com.mgg.entity.Item;
+import com.mgg.reader.Parser;
 
 /**
  * This class serializes the data from the CSV files gained from the 

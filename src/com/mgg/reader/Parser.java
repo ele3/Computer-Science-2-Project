@@ -1,9 +1,14 @@
-package com.mgg;
+package com.mgg.reader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.mgg.entity.Address;
+import com.mgg.entity.Item;
+import com.mgg.entity.Person;
+import com.mgg.entity.Store;
 
 /**
  * This class loads the data from the CSV files and parses said data into
