@@ -60,7 +60,7 @@ public class JSONConverter {
 	}
 	
 	/**
-	 * Converts the Store ArrayList into JSON form, and outputs as a JSON file.
+	 * Converts the Item ArrayList into JSON form, and outputs as a JSON file.
 	 */
 	public static void jsonItemOutput() {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();

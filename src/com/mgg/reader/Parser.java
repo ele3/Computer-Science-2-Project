@@ -66,7 +66,7 @@ public class Parser {
 	/**
 	 * Reads the data from the input file, parses them into a Store, 
 	 * and then returns a Store ArrayList
-	 * @return
+	 * @return Store ArrayList
 	 */
 	public static ArrayList<Store> parseStoreData() {
 		String fileName = "data/Stores.csv";
@@ -99,6 +99,11 @@ public class Parser {
 		return storeData;
 	}
 	
+	/**
+	 * Reads the data from the input file, parses them into an Item, 
+	 * and then returns an Item ArrayList
+	 * @return Item ArrayList
+	 */
 	public static ArrayList<Item> parseItemData() {
 		String fileName = "data/Items.csv";
 		ArrayList<Item> itemData = new ArrayList<>();
