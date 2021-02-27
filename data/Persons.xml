@@ -11,8 +11,8 @@
     <zipCode>33255</zipCode>
   </address>
   <emails>
-    <string>lsmith@lps.org</string>
-    <string>lsmith@huskers.unl.edu</string>
+    <email>lsmith@lps.org</email>
+    <email>lsmith@huskers.unl.edu</email>
   </emails>
 </person>
 <person>
@@ -27,8 +27,8 @@
     <zipCode>91945</zipCode>
   </address>
   <emails>
-    <string>njohnson@aol.com</string>
-    <string>njohnson@yahoo.com</string>
+    <email>njohnson@aol.com</email>
+    <email>njohnson@yahoo.com</email>
   </emails>
 </person>
 <person>
@@ -43,8 +43,8 @@
     <zipCode>61102</zipCode>
   </address>
   <emails>
-    <string>owilliams@gmail.com</string>
-    <string>owilliams@drop.com</string>
+    <email>owilliams@gmail.com</email>
+    <email>owilliams@drop.com</email>
   </emails>
 </person>
 <person>
@@ -59,7 +59,7 @@
     <zipCode>33128</zipCode>
   </address>
   <emails>
-    <string>jjones@yahoo.com</string>
+    <email>jjones@yahoo.com</email>
   </emails>
 </person>
 <person>
@@ -74,7 +74,7 @@
     <zipCode>92111</zipCode>
   </address>
   <emails>
-    <string>abrown@hotmail.com</string>
+    <email>abrown@hotmail.com</email>
   </emails>
 </person>
 <person>
@@ -89,9 +89,9 @@
     <zipCode>61125</zipCode>
   </address>
   <emails>
-    <string>adavis@bing.com</string>
-    <string>adavis@taobao.com</string>
-    <string>adavis@lps.org</string>
+    <email>adavis@bing.com</email>
+    <email>adavis@taobao.com</email>
+    <email>adavis@lps.org</email>
   </emails>
 </person>
 <person>
@@ -106,8 +106,8 @@
     <zipCode>81612</zipCode>
   </address>
   <emails>
-    <string>bmiller@gmail.com</string>
-    <string>bmiller@ebay.com</string>
+    <email>bmiller@gmail.com</email>
+    <email>bmiller@ebay.com</email>
   </emails>
 </person>
 <person>
@@ -122,7 +122,7 @@
     <zipCode>81612</zipCode>
   </address>
   <emails>
-    <string>jwilson@zoho.com</string>
+    <email>jwilson@zoho.com</email>
   </emails>
 </person>
 </persons>

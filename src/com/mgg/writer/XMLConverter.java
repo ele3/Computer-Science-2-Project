@@ -28,6 +28,7 @@ public class XMLConverter {
 	public static void xmlPersonOutput() {
 		XStream xstream = new XStream();
 		xstream.alias("person", Person.class);
+		xstream.alias("email", String.class);
 		ArrayList<Person> personData = Parser.parsePersonData();
 		File f = new File("data/Persons.xml");
 		
@@ -52,6 +53,7 @@ public class XMLConverter {
 	public static void xmlStoreOutput() {
 		XStream xstream = new XStream();
 		xstream.alias("Store", Store.class);
+		xstream.alias("email", String.class);
 		ArrayList<Store> storeData = Parser.parseStoreData();
 		File f = new File("data/Stores.xml");
 		
