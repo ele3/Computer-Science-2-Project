@@ -123,14 +123,20 @@ public class Parser {
 			buffer = s.nextLine();
 			if (!buffer.isEmpty()) {
 				String[] tokens = buffer.split(",", -1);
-				if (!tokens[3].isEmpty()) {
-					Item itemPlaceHolder = new Item(tokens[0], tokens[2], Double.parseDouble(tokens[3]));
-					itemData.add(itemPlaceHolder);
+				Double basePrice = 0.0;
+				if (tokens.length == 4) {
+					if (!tokens[3].isEmpty()) {
+						basePrice = Double.parseDouble(tokens[3]);
+					}
+					else {
+						basePrice = null;
+					}
 				}
 				else {
-					Item itemPlaceHolder = new Item(tokens[0], tokens[2], null);
-					itemData.add(itemPlaceHolder);
+					basePrice = null;
 				}
+				Item itemPlaceHolder = new Item(tokens[0], tokens[2], basePrice);
+				itemData.add(itemPlaceHolder);
 			}
 		}
 		return itemData;
