@@ -17,4 +17,12 @@
 		<basedPrice>29.99</basedPrice></UsedProduct>
 	<GiftCard>
 		<itemCode>b436dw</itemCode>
-		<name>Riot Points</name></GiftCard></items>
+		<name>Riot Points</name></GiftCard>
+	<Service>
+		<itemCode>cpi19p</itemCode>
+		<name>Game Therapy</name>
+		<hourlyRate>3.99</hourlyRate></Service>
+	<Subscription>
+		<itemCode>5i1khh</itemCode>
+		<name>Netflix</name>
+		<annualFee>150.00</annualFee></Subscription></items>

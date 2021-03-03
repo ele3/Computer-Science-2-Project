@@ -23,5 +23,15 @@
   {
     "itemCode": "b436dw",
     "name": "Riot Points"
+  },
+  {
+    "itemCode": "cpi19p",
+    "name": "Game Therapy",
+    "basePrice": 3.99
+  },
+  {
+    "itemCode": "5i1khh",
+    "name": "Netflix",
+    "basePrice": 150.0
   }
 ]}

@@ -1,0 +1,131 @@
++-----------------------------------------------------+
+| Salesperson Summary Report                          |
++-----------------------------------------------------+
+Salesperson                    # Sales    Grand Total    
+Smith, Liam                    4          $    667.69
+Johnson, Noah                  1          $   1034.45
++-----------------------------------------------------+
+                               5          $   1702.14
+
++----------------------------------------------------------------+
+| Store Sales Summary Report                                     |
++----------------------------------------------------------------+
+Store      Manager                        # Sales    Grand Total    
+iseq2c     Smith, Liam                    3          $    483.25
+d08qbz     Johnson, Noah                  1          $   1034.45
+nk2mpe     Smith, Liam                    1          $    184.44
+7xtj2o     Smith, Liam                    0          $      0.00
++----------------------------------------------------------------+
+                                          5          $   1702.14
+
+Sale  #sAle001
+Store #iseq2c
+Customer: 
+Williams, Oliver ([owilliams@gmail.com, owilliams@drop.com])
+	12 Caesars Way
+	Rockford IL 61102 US
+
+Sales Person: 
+Smith,Liam ([lsmith@lps.org, lsmith@huskers.unl.edu])
+	851 Havenside Junction
+	Miami FL 33255 US
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+Nintendo Switch
+   (New Item #8xz1ok @299.99/ea)                             $    299.99
+Breath of the Wild (Digital Copy)
+   (New Item #2lgcel @59.99/ea)                              $    59.99
+                                                             -=-=-=-=-=-
+                                                    Subtotal $    359.98
+                                                         Tax $     26.10
+                                           Discount (10.00%) $     38.61
+                                                 Grand Total $    347.47
+Sale  #3CXcrW
+Store #iseq2c
+Customer: 
+Jones,Jay ([jjones@yahoo.com])
+	28 35th Alford Plac
+	Miami FL 33128 US
+
+Sales Person: 
+Smith,Liam ([lsmith@lps.org, lsmith@huskers.unl.edu])
+	851 Havenside Junction
+	Miami FL 33255 US
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+Riot Points
+   (Gift Card #b436dw)                                       $     20.00
+                                                             -=-=-=-=-=-
+                                                    Subtotal $     20.00
+                                                         Tax $      1.45
+                                            Discount (5.00%) $      1.07
+                                                 Grand Total $     20.38
+Sale  #thesale03
+Store #iseq2c
+Customer: 
+Williams, Oliver ([owilliams@gmail.com, owilliams@drop.com])
+	12 Caesars Way
+	Rockford IL 61102 US
+
+Sales Person: 
+Smith,Liam ([lsmith@lps.org, lsmith@huskers.unl.edu])
+	851 Havenside Junction
+	Miami FL 33255 US
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+Netflix
+   (Subscription #5i1khh 312 days@$150.00/yr)                $    128.22
+                                                             -=-=-=-=-=-
+                                                    Subtotal $    128.22
+                                                         Tax $      0.00
+                                            Discount (10.00%) $    12.82
+                                                 Grand Total $    115.40
+Sale  #s004
+Store #d08qbz
+Customer: 
+Brown,Alicia ([abrown@hotmail.com])
+	941 Sheen Road
+	San Diego CA 92111 US
+
+Sales Person: 
+Johnson,Noah ([njohnson@aol.com, njohnson@yahoo.com])
+	184 Fletchers Way
+	San Diego CA 91945 US
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+PlayStation 5
+   (New Item #jc3jvi @$499.99/ea)                            $    999.98
+Game Therapy
+   (Service #cpi19p by Johnson, Noah 4hrs@$3.99/hr)          $     15.96
+                                                             -=-=-=-=-=-
+                                                    Subtotal $   1015.94
+                                                         Tax $     72.95
+                                            Discount (5.00%) $     54.44
+                                                 Grand Total $   1034.45
+Sale  #SaLE005
+Store #nk2mpe
+Customer: 
+Miller,Benjamin ([bmiller@gmail.com, bmiller@ebay.com])
+	60 Spinney Hill Road
+	Aspen CO 81612 US
+
+Sales Person: 
+Smith,Liam ([lsmith@lps.org, lsmith@huskers.unl.edu])
+	851 Havenside Junction
+	Miami FL 33255 US
+
+Item                                                               Total
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-                          -=-=-=-=-=-
+GTA V
+   (Used Item #b8u6od @$23.99/ea)                            $     71.97
+Riot Points
+   (Gift Card #b436dw)                                       $    100.00
+                                                             -=-=-=-=-=-
+                                                    Subtotal $    171.97
+                                                         Tax $     12.47
+                                                 Grand Total $    184.44
+

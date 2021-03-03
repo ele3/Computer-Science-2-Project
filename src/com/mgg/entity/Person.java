@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 
  * Date: 02/26/2021
  * CSCE 156 Spring 2021
- * @author Eric Le & Brendan Huynh
+ * @author Eric Le
  * 
  */
 

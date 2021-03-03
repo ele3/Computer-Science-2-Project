@@ -23,4 +23,14 @@
   <itemCode>b436dw</itemCode>
   <name>Riot Points</name>
 </Item>
+<Item>
+  <itemCode>cpi19p</itemCode>
+  <name>Game Therapy</name>
+  <basePrice>3.99</basePrice>
+</Item>
+<Item>
+  <itemCode>5i1khh</itemCode>
+  <name>Netflix</name>
+  <basePrice>150.0</basePrice>
+</Item>
 </items>
