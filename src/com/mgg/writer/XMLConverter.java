@@ -7,8 +7,17 @@ import java.util.ArrayList;
 
 import com.thoughtworks.xstream.XStream;
 import com.mgg.entity.Person;
+import com.mgg.entity.PlatinumCustomer;
+import com.mgg.entity.Service;
 import com.mgg.entity.Store;
+import com.mgg.entity.Subscription;
+import com.mgg.entity.UsedProduct;
+import com.mgg.entity.Customer;
+import com.mgg.entity.Employee;
+import com.mgg.entity.GiftCard;
+import com.mgg.entity.GoldCustomer;
 import com.mgg.entity.Item;
+import com.mgg.entity.NewProduct;
 import com.mgg.reader.Parser;
 
 /**
@@ -28,6 +37,10 @@ public class XMLConverter {
 	public static void xmlPersonOutput() {
 		XStream xstream = new XStream();
 		xstream.alias("person", Person.class);
+		xstream.alias("PlatinumCustomer", PlatinumCustomer.class);
+		xstream.alias("GoldCustomer", GoldCustomer.class);
+		xstream.alias("Customer", Customer.class);
+		xstream.alias("Employee", Employee.class);
 		xstream.alias("email", String.class);
 		ArrayList<Person> personData = Parser.parsePersonData();
 		File f = new File("data/Persons.xml");
@@ -78,6 +91,11 @@ public class XMLConverter {
 	public static void xmlItemOutput() {
 		XStream xstream = new XStream();
 		xstream.alias("Item", Item.class);
+		xstream.alias("NewProduct", NewProduct.class);
+		xstream.alias("UsedProduct", UsedProduct.class);
+		xstream.alias("GiftCard", GiftCard.class);
+		xstream.alias("Service", Service.class);
+		xstream.alias("Subscription", Subscription.class);
 		ArrayList<Item> itemData = Parser.parseItemData();
 		File f = new File("data/Items.xml");
 		

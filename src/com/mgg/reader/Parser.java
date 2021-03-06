@@ -6,9 +6,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.mgg.entity.Address;
+import com.mgg.entity.Customer;
+import com.mgg.entity.Employee;
+import com.mgg.entity.GiftCard;
+import com.mgg.entity.GoldCustomer;
 import com.mgg.entity.Item;
+import com.mgg.entity.NewProduct;
 import com.mgg.entity.Person;
+import com.mgg.entity.PlatinumCustomer;
+import com.mgg.entity.Service;
 import com.mgg.entity.Store;
+import com.mgg.entity.Subscription;
+import com.mgg.entity.UsedProduct;
 
 /**
  * This class loads the data from the CSV files and parses said data into
@@ -47,6 +56,7 @@ public class Parser {
 			if (!buffer.isEmpty()) {
 				ArrayList<String> emails = new ArrayList<>();
 				String[] tokens = buffer.split(",");
+				Person personPlaceHolder = null;
 				Address addressPlaceHolder = new Address(tokens[4], tokens[5], tokens[6], tokens[8], tokens[7]);
 				if (tokens.length == 9) {
 					emails = null;
@@ -56,7 +66,19 @@ public class Parser {
 						emails.add(tokens[i]);
 					}
 				}
-				Person personPlaceHolder = new Person(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+				
+				if (tokens[1].equals("P")) {
+					personPlaceHolder = new PlatinumCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+				}
+				else if (tokens[1].equals("G")) {
+					personPlaceHolder = new GoldCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+				}
+				else if (tokens[1].equals("C")) {
+					personPlaceHolder = new Customer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+				}
+				else if (tokens[1].equals("E")) {
+					personPlaceHolder = new Employee(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+				}
 				personData.add(personPlaceHolder);
 			}
 		}
@@ -123,19 +145,35 @@ public class Parser {
 			buffer = s.nextLine();
 			if (!buffer.isEmpty()) {
 				String[] tokens = buffer.split(",", -1);
-				Double basePrice = 0.0;
+				Item itemPlaceHolder = null;
+				Double price = 0.0;
 				if (tokens.length == 4) {
 					if (!tokens[3].isEmpty()) {
-						basePrice = Double.parseDouble(tokens[3]);
+						price = Double.parseDouble(tokens[3]);
 					}
 					else {
-						basePrice = null;
+						price = null;
 					}
 				}
 				else {
-					basePrice = null;
+					price = null;
 				}
-				Item itemPlaceHolder = new Item(tokens[0], tokens[2], basePrice);
+				
+				if (tokens[1].equals("PN")) {
+					itemPlaceHolder = new NewProduct(tokens[0], tokens[2], price);
+				}
+				else if (tokens[1].equals("PU")) {
+					itemPlaceHolder = new UsedProduct(tokens[0], tokens[2], price);
+				}
+				else if (tokens[1].equals("PG")) {
+					itemPlaceHolder = new GiftCard(tokens[0], tokens[2]);
+				}
+				else if (tokens[1].equals("SV")) {
+					itemPlaceHolder = new Service(tokens[0], tokens[2], price);
+				}
+				else if (tokens[1].equals("SB")) {
+					itemPlaceHolder = new Subscription(tokens[0], tokens[2], price);
+				}
 				itemData.add(itemPlaceHolder);
 			}
 		}

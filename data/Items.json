@@ -1,37 +1,37 @@
 {
 "items": [
   {
+    "basePrice": 299.99,
     "itemCode": "8xz1ok",
-    "name": "Nintendo Switch",
-    "basePrice": 299.99
+    "name": "Nintendo Switch"
   },
   {
+    "basePrice": 499.99,
     "itemCode": "jc3jvi",
-    "name": "PlayStation 5",
-    "basePrice": 499.99
+    "name": "PlayStation 5"
   },
   {
+    "basePrice": 59.99,
     "itemCode": "2lgcel",
-    "name": "Breath of the Wild (Digital Copy)",
-    "basePrice": 59.99
+    "name": "Breath of the Wild (Digital Copy)"
   },
   {
+    "basePrice": 29.99,
     "itemCode": "b8u6od",
-    "name": "GTA V",
-    "basePrice": 29.99
+    "name": "GTA V"
   },
   {
     "itemCode": "b436dw",
     "name": "Riot Points"
   },
   {
+    "hourlyRate": 3.99,
     "itemCode": "cpi19p",
-    "name": "Game Therapy",
-    "basePrice": 3.99
+    "name": "Game Therapy"
   },
   {
+    "annualFee": 150.0,
     "itemCode": "5i1khh",
-    "name": "Netflix",
-    "basePrice": 150.0
+    "name": "Netflix"
   }
 ]}

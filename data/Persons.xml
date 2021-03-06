@@ -1,5 +1,5 @@
 <persons>
-<person>
+<Employee>
   <personCode>qawm9j</personCode>
   <lastName>Smith</lastName>
   <firstName>Liam</firstName>
@@ -14,8 +14,8 @@
     <email>lsmith@lps.org</email>
     <email>lsmith@huskers.unl.edu</email>
   </emails>
-</person>
-<person>
+</Employee>
+<Employee>
   <personCode>oqdfba</personCode>
   <lastName>Johnson</lastName>
   <firstName>Noah</firstName>
@@ -30,8 +30,8 @@
     <email>njohnson@aol.com</email>
     <email>njohnson@yahoo.com</email>
   </emails>
-</person>
-<person>
+</Employee>
+<PlatinumCustomer>
   <personCode>rrdz9q</personCode>
   <lastName>Williams</lastName>
   <firstName>Oliver</firstName>
@@ -46,8 +46,8 @@
     <email>owilliams@gmail.com</email>
     <email>owilliams@drop.com</email>
   </emails>
-</person>
-<person>
+</PlatinumCustomer>
+<GoldCustomer>
   <personCode>1kxxua</personCode>
   <lastName>Jones</lastName>
   <firstName>Jay</firstName>
@@ -61,8 +61,8 @@
   <emails>
     <email>jjones@yahoo.com</email>
   </emails>
-</person>
-<person>
+</GoldCustomer>
+<GoldCustomer>
   <personCode>kmt1e5</personCode>
   <lastName>Brown</lastName>
   <firstName>Alicia</firstName>
@@ -76,8 +76,8 @@
   <emails>
     <email>abrown@hotmail.com</email>
   </emails>
-</person>
-<person>
+</GoldCustomer>
+<GoldCustomer>
   <personCode>qoxu6n</personCode>
   <lastName>Davis</lastName>
   <firstName>Anna</firstName>
@@ -93,8 +93,8 @@
     <email>adavis@taobao.com</email>
     <email>adavis@lps.org</email>
   </emails>
-</person>
-<person>
+</GoldCustomer>
+<Customer>
   <personCode>2r0dav</personCode>
   <lastName>Miller</lastName>
   <firstName>Benjamin</firstName>
@@ -109,8 +109,8 @@
     <email>bmiller@gmail.com</email>
     <email>bmiller@ebay.com</email>
   </emails>
-</person>
-<person>
+</Customer>
+<Customer>
   <personCode>rj3be0</personCode>
   <lastName>Wilson</lastName>
   <firstName>Jessica</firstName>
@@ -124,5 +124,5 @@
   <emails>
     <email>jwilson@zoho.com</email>
   </emails>
-</person>
+</Customer>
 </persons>

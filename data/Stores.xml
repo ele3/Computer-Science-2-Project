@@ -1,7 +1,7 @@
 <stores>
 <Store>
   <storeCode>iseq2c</storeCode>
-  <manager>
+  <manager class="com.mgg.entity.Employee">
     <personCode>qawm9j</personCode>
     <lastName>Smith</lastName>
     <firstName>Liam</firstName>
@@ -27,7 +27,7 @@
 </Store>
 <Store>
   <storeCode>d08qbz</storeCode>
-  <manager>
+  <manager class="com.mgg.entity.Employee">
     <personCode>oqdfba</personCode>
     <lastName>Johnson</lastName>
     <firstName>Noah</firstName>
@@ -53,7 +53,7 @@
 </Store>
 <Store>
   <storeCode>nk2mpe</storeCode>
-  <manager>
+  <manager class="com.mgg.entity.Employee">
     <personCode>qawm9j</personCode>
     <lastName>Smith</lastName>
     <firstName>Liam</firstName>
@@ -79,7 +79,7 @@
 </Store>
 <Store>
   <storeCode>7xtj2o</storeCode>
-  <manager>
+  <manager class="com.mgg.entity.Employee">
     <personCode>qawm9j</personCode>
     <lastName>Smith</lastName>
     <firstName>Liam</firstName>

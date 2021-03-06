@@ -1,8 +1,8 @@
 package com.mgg.entity;
 
 /**
- * This class models an item's information, including the item's
- * code, type, name, and cost.
+ * This class models a general item's information, including the item's
+ * code and name, and gets the type and tax depending on the type of item.
  * 
  * Date: 02/26/2021
  * CSCE 156 Spring 2021
@@ -10,15 +10,13 @@ package com.mgg.entity;
  * 
  */
 
-public class Item {
+public abstract class Item {
 	private String itemCode;
 	private String name;
-	private Double basePrice;
 	
-	public Item(String itemCode, String name, Double basePrice) {
+	public Item(String itemCode, String name) {
 		this.itemCode = itemCode;
 		this.name = name;
-		this.basePrice = basePrice;
 	}
 
 	public String getItemCode() {
@@ -29,7 +27,6 @@ public class Item {
 		return this.name;
 	}
 	
-	public Double getBasePrice() {
-		return this.basePrice;
-	}
+	public abstract String getType();
+	public abstract Double getTax();
 }

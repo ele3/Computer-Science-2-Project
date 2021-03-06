@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * 
  */
 
-public class Person {
+public abstract class Person {
 	private String personCode;
 	private String lastName;
 	private String firstName;
@@ -46,5 +46,8 @@ public class Person {
 	public ArrayList<String> getEmails() {
 		return this.emails;
 	}
+	
+	public abstract String getType();
+	public abstract Double getDiscount();
 	
 }

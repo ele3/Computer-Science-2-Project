@@ -1,36 +1,36 @@
 <items>
-<Item>
+<NewProduct>
   <itemCode>8xz1ok</itemCode>
   <name>Nintendo Switch</name>
   <basePrice>299.99</basePrice>
-</Item>
-<Item>
+</NewProduct>
+<NewProduct>
   <itemCode>jc3jvi</itemCode>
   <name>PlayStation 5</name>
   <basePrice>499.99</basePrice>
-</Item>
-<Item>
+</NewProduct>
+<NewProduct>
   <itemCode>2lgcel</itemCode>
   <name>Breath of the Wild (Digital Copy)</name>
   <basePrice>59.99</basePrice>
-</Item>
-<Item>
+</NewProduct>
+<UsedProduct>
   <itemCode>b8u6od</itemCode>
   <name>GTA V</name>
   <basePrice>29.99</basePrice>
-</Item>
-<Item>
+</UsedProduct>
+<GiftCard>
   <itemCode>b436dw</itemCode>
   <name>Riot Points</name>
-</Item>
-<Item>
+</GiftCard>
+<Service>
   <itemCode>cpi19p</itemCode>
   <name>Game Therapy</name>
-  <basePrice>3.99</basePrice>
-</Item>
-<Item>
+  <hourlyRate>3.99</hourlyRate>
+</Service>
+<Subscription>
   <itemCode>5i1khh</itemCode>
   <name>Netflix</name>
-  <basePrice>150.0</basePrice>
-</Item>
+  <annualFee>150.0</annualFee>
+</Subscription>
 </items>
