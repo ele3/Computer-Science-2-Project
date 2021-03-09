@@ -21,9 +21,12 @@ public class NewProduct extends Product{
 	public Double getBasePrice() {
 		return this.basePrice;
 	}
-	
-	@Override
+
 	public String getType() {
 		return "PN";
+	}
+
+	public Double getPrice() {
+		return this.basePrice;
 	}
 }

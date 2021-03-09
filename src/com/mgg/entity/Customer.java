@@ -16,13 +16,11 @@ public class Customer extends Person {
 	public Customer(String personCode, String lastName, String firstName, Address address, ArrayList<String> emails) {
 		super(personCode, lastName, firstName, address, emails);
 	}
-	
-	@Override
+
 	public String getType() {
 		return "C";
 	}
-	
-	@Override
+
 	public Double getDiscount() {
 		return 0.0;
 	}

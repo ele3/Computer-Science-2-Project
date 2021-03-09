@@ -17,13 +17,11 @@ public class PlatinumCustomer extends Person{
 	public PlatinumCustomer(String personCode, String lastName, String firstName, Address address, ArrayList<String> emails) {
 		super(personCode, lastName, firstName, address, emails);
 	}
-	
-	@Override
+
 	public String getType() {
 		return "P";
 	}
-	
-	@Override
+
 	public Double getDiscount() {
 		return 0.1;
 	}

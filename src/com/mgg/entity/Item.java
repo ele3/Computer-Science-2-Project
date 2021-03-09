@@ -1,8 +1,9 @@
 package com.mgg.entity;
 
 /**
- * This class models a general item's information, including the item's
- * code and name, and gets the type and tax depending on the type of item.
+ * This superclass for Product, Service, and Subscription models a 
+ * general item's information, including the item's code and name, and gets 
+ * the type, tax, and price depending on the type of item.
  * 
  * Date: 02/26/2021
  * CSCE 156 Spring 2021
@@ -29,4 +30,5 @@ public abstract class Item {
 	
 	public abstract String getType();
 	public abstract Double getTax();
+	public abstract Double getPrice();
 }

@@ -3,21 +3,30 @@ package com.mgg.reader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 import com.mgg.entity.Address;
 import com.mgg.entity.Customer;
 import com.mgg.entity.Employee;
 import com.mgg.entity.GiftCard;
+import com.mgg.entity.GiftCardTransaction;
 import com.mgg.entity.GoldCustomer;
 import com.mgg.entity.Item;
 import com.mgg.entity.NewProduct;
+import com.mgg.entity.NewProductTransaction;
 import com.mgg.entity.Person;
 import com.mgg.entity.PlatinumCustomer;
+import com.mgg.entity.Sale;
 import com.mgg.entity.Service;
+import com.mgg.entity.ServiceTransaction;
 import com.mgg.entity.Store;
 import com.mgg.entity.Subscription;
+import com.mgg.entity.SubscriptionTransaction;
+import com.mgg.entity.Transaction;
 import com.mgg.entity.UsedProduct;
+import com.mgg.entity.UsedProductTransaction;
 
 /**
  * This class loads the data from the CSV files and parses said data into
@@ -178,6 +187,106 @@ public class Parser {
 			}
 		}
 		return itemData;
+	}
+	
+	/**
+	 * Reads the data from the input file, parses them into a Sale, 
+	 * and then returns a Sale ArrayList that is sorted by Customer
+	 * last name in descending alphabetical order.
+	 * @return Sale ArrayList
+	 */
+	public static ArrayList<Sale> parseSaleData() {
+		String fileName = "data/Sales.csv";
+		ArrayList<Sale> saleData = new ArrayList<>();
+		ArrayList<Store> storeData = parseStoreData();
+		ArrayList<Person> personData = parsePersonData();
+		ArrayList<Item> itemData = parseItemData();
+		
+		Scanner s = null;
+		try {
+			s = new Scanner(new File(fileName));
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+		String buffer = "";
+		s.nextLine();
+		
+		while (s.hasNextLine()) {
+			buffer = s.nextLine();
+			if (!buffer.isEmpty()) {
+				String[] tokens = buffer.split(",");
+				String saleCode = tokens[0];
+				Store store = null;
+				Person customer = null;
+				Person salesperson = null;
+				for (Store st : storeData) {
+					if (tokens[1].equals(st.getStoreCode())) {
+						store = st;
+					}
+				}
+				for (Person p : personData) {
+					if (tokens[2].equals(p.getPersonCode())) {
+						customer = p;
+					}
+				}
+				for (Person p : personData) {
+					if (tokens[3].equals(p.getPersonCode())) {
+						salesperson = p;
+					}
+				}
+				
+				ArrayList<Transaction> transactionList = new ArrayList<>();
+				Transaction t = null;
+				Person serviceEmployee = null;
+				int size = tokens.length - 1;
+				int count = 4;
+				
+				while (count < size) {
+					for (Item it : itemData) {
+						if (tokens[count].equals(it.getItemCode())) {
+							if (it.getType().equals("PN")) {
+								t = new NewProductTransaction(it, Integer.parseInt(tokens[count + 1]));
+								count = count + 2;
+							}
+							else if (it.getType().equals("PU")) {
+								t = new UsedProductTransaction(it, Integer.parseInt(tokens[count + 1]));
+								count = count + 2;
+							}
+							else if (it.getType().equals("PG")) {
+								t = new GiftCardTransaction(it, Double.parseDouble(tokens[count + 1]));
+								count = count + 2;
+							}
+							else if (it.getType().equals("SV")) {
+								for (Person p : personData) {
+									if (tokens[count + 1].equals(p.getPersonCode())) {
+										serviceEmployee = p;
+									}
+								}
+								t = new ServiceTransaction(it, serviceEmployee, Double.parseDouble(tokens[count + 2]));
+								count = count + 3;
+							}
+							else if (it.getType().equals("SB")) {
+								String beginDate = tokens[count + 1];
+								String endDate = tokens[count + 2];
+								t = new SubscriptionTransaction(it, beginDate, endDate);
+								count = count + 3;
+							}
+							transactionList.add(t);
+							break;
+						}
+					}
+				}
+				Sale salePlaceHolder = new Sale(saleCode, store, customer, salesperson, transactionList);
+				saleData.add(salePlaceHolder);
+			}
+		}
+		Collections.sort(saleData, new Comparator<Sale>() {
+			public int compare(Sale a, Sale b) {
+				return a.getCustomer().getLastName().compareTo(b.getCustomer().getLastName());
+			}
+		});
+		
+		return saleData;
 	}
 
 }

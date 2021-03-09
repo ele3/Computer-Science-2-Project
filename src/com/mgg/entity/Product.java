@@ -1,8 +1,9 @@
 package com.mgg.entity;
 
 /**
- * This class models a general Product's information, including its
- * tax and later gets the type of the specific product.
+ * This superclass for NewProduct and UsedProduct models a 
+ * general Product's information, including its tax and later 
+ * gets the type of the specific product.
  * 
  * Date: 03/08/2021
  * CSCE 156 Spring 2021

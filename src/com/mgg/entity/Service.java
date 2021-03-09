@@ -21,14 +21,16 @@ public class Service extends Item {
 	public Double getHourlyRate() {
 		return this.hourlyRate;
 	}
-	
-	@Override
+
 	public String getType() {
 		return "SV";
 	}
-	
-	@Override
+
 	public Double getTax() {
 		return 0.0285;
+	}
+
+	public Double getPrice() {
+		return this.hourlyRate;
 	}
 }

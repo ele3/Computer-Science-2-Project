@@ -17,17 +17,22 @@ public class UsedProduct extends Product {
 		super(itemCode, name);
 		this.basePrice = basePrice;
 	}
-	
+
 	public Double getBasePrice() {
 		return this.basePrice;
 	}
-	
-	@Override
+
 	public String getType() {
 		return "PU";
 	}
 	
 	public Double getUsedPrice() {
-		return (basePrice * 0.8);
+		Double result = (basePrice * 0.8);
+		Double roundResult = (double) Math.round(result * 100) / 100;
+		return roundResult;
+	}
+
+	public Double getPrice() {
+		return getUsedPrice();
 	}
 }

@@ -17,18 +17,20 @@ public class Subscription extends Item{
 		super(itemCode, name);
 		this.annualFee = annualFee;
 	}
-	
+
 	public Double getAnnualFee() {
 		return this.annualFee;
 	}
-	
-	@Override
+
 	public String getType() {
 		return "SB";
 	}
-	
-	@Override
+
 	public Double getTax() {
 		return 0.0;
+	}
+
+	public Double getPrice() {
+		return this.annualFee;
 	}
 }
