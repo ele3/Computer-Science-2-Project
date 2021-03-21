@@ -19,12 +19,12 @@ public abstract class Person {
 	private Address address;
 	private ArrayList<String> emails;
 	
-	public Person(String personCode, String lastName, String firstName, Address address, ArrayList<String> emails) {
+	public Person(String personCode, String lastName, String firstName, Address address) {
 		this.personCode = personCode;
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.address = address;
-		this.emails = emails;
+		this.emails = new ArrayList<>();
 	}
 	
 	public String getPersonCode() {
@@ -45,6 +45,10 @@ public abstract class Person {
 
 	public ArrayList<String> getEmails() {
 		return this.emails;
+	}
+	
+	public void addEmail (String email) {
+		this.emails.add(email);
 	}
 	
 	public abstract String getType();

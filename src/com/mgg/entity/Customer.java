@@ -1,7 +1,5 @@
 package com.mgg.entity;
 
-import java.util.ArrayList;
-
 /**
  * This class models a Regular Customer's information, including their person code, 
  * type, last name, first name, address, and emails. But also, gets the unique discount.
@@ -13,8 +11,8 @@ import java.util.ArrayList;
  */
 
 public class Customer extends Person {
-	public Customer(String personCode, String lastName, String firstName, Address address, ArrayList<String> emails) {
-		super(personCode, lastName, firstName, address, emails);
+	public Customer(String personCode, String lastName, String firstName, Address address) {
+		super(personCode, lastName, firstName, address);
 	}
 
 	public String getType() {

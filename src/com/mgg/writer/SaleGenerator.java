@@ -1,6 +1,8 @@
 package com.mgg.writer;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import com.mgg.entity.Person;
 import com.mgg.entity.Sale;
@@ -27,6 +29,16 @@ public class SaleGenerator {
 	public static void generateSalespersonSummary() {
 		ArrayList<Sale> saleData = Parser.parseSaleData();
 		ArrayList<Person> personData = Parser.parsePersonData();
+		
+		Collections.sort(personData, new Comparator<Person>() {
+			public int compare(Person a, Person b) {
+				int flag = a.getLastName().compareTo(b.getLastName());
+				if (flag != 0) {
+					return flag;
+				}
+				return a.getFirstName().compareTo(b.getFirstName());
+			}
+		});
 		
 		Double saleSummaryGrandTotal = 0.0;
 		int saleSummaryCount = 0;
@@ -67,6 +79,16 @@ public class SaleGenerator {
 	public static void generateStoreSummary() {
 		ArrayList<Sale> saleData = Parser.parseSaleData();
 		ArrayList<Store> storeData = Parser.parseStoreData();
+		
+		Collections.sort(storeData, new Comparator<Store>() {
+			public int compare(Store a, Store b) {
+				int flag = a.getManager().getLastName().compareTo(b.getManager().getLastName());
+				if (flag != 0) {
+					return flag;
+				}
+				return a.getManager().getFirstName().compareTo(b.getManager().getFirstName());
+			}
+		});
 		
 		Double saleSummaryGrandTotal = 0.0;
 		int saleSummaryCount = 0;

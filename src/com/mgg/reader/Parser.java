@@ -3,8 +3,6 @@ package com.mgg.reader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Scanner;
 
 import com.mgg.entity.Address;
@@ -63,32 +61,26 @@ public class Parser {
 		while (s.hasNextLine()) {
 			buffer = s.nextLine();
 			if (!buffer.isEmpty()) {
-				ArrayList<String> emails = new ArrayList<>();
 				String[] tokens = buffer.split(",");
 				Person personPlaceHolder = null;
 				Address addressPlaceHolder = new Address(tokens[4], tokens[5], tokens[6], tokens[8], tokens[7]);
-				if (tokens.length == 9) {
-					emails = null;
-				}
-				else {
-					for (int i = 9; i < tokens.length; i++) {
-						emails.add(tokens[i]);
-					}
-				}
-				
 				if (tokens[1].equals("P")) {
-					personPlaceHolder = new PlatinumCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+					personPlaceHolder = new PlatinumCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder);
 				}
 				else if (tokens[1].equals("G")) {
-					personPlaceHolder = new GoldCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+					personPlaceHolder = new GoldCustomer(tokens[0], tokens[2], tokens[3], addressPlaceHolder);
 				}
 				else if (tokens[1].equals("C")) {
-					personPlaceHolder = new Customer(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+					personPlaceHolder = new Customer(tokens[0], tokens[2], tokens[3], addressPlaceHolder);
 				}
 				else if (tokens[1].equals("E")) {
-					personPlaceHolder = new Employee(tokens[0], tokens[2], tokens[3], addressPlaceHolder, emails);
+					personPlaceHolder = new Employee(tokens[0], tokens[2], tokens[3], addressPlaceHolder);
 				}
 				personData.add(personPlaceHolder);
+				for(int i=9; i<tokens.length; i++) {
+					String email = tokens[i];
+					personPlaceHolder.addEmail(email);
+				}
 			}
 		}
 		return personData;
@@ -215,6 +207,7 @@ public class Parser {
 			buffer = s.nextLine();
 			if (!buffer.isEmpty()) {
 				String[] tokens = buffer.split(",");
+				Sale salePlaceHolder = null;
 				String saleCode = tokens[0];
 				Store store = null;
 				Person customer = null;
@@ -234,8 +227,7 @@ public class Parser {
 						salesperson = p;
 					}
 				}
-				
-				ArrayList<Transaction> transactionList = new ArrayList<>();
+				salePlaceHolder = new Sale(saleCode, store, customer, salesperson);
 				Transaction t = null;
 				Person serviceEmployee = null;
 				int size = tokens.length - 1;
@@ -271,21 +263,14 @@ public class Parser {
 								t = new SubscriptionTransaction(it, beginDate, endDate);
 								count = count + 3;
 							}
-							transactionList.add(t);
+							salePlaceHolder.addTransaction(t);
 							break;
 						}
 					}
 				}
-				Sale salePlaceHolder = new Sale(saleCode, store, customer, salesperson, transactionList);
 				saleData.add(salePlaceHolder);
 			}
 		}
-		Collections.sort(saleData, new Comparator<Sale>() {
-			public int compare(Sale a, Sale b) {
-				return a.getCustomer().getLastName().compareTo(b.getCustomer().getLastName());
-			}
-		});
-		
 		return saleData;
 	}
 

@@ -1,5 +1,6 @@
 package com.mgg.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,12 +21,12 @@ public class Sale {
 	private Person salesperson;
 	private List<Transaction> transactionList;
 	
-	public Sale(String saleCode, Store store, Person customer, Person salesperson, List<Transaction> transactionList) {
+	public Sale(String saleCode, Store store, Person customer, Person salesperson) {
 		this.saleCode = saleCode;
 		this.store = store;
 		this.customer = customer;
 		this.salesperson = salesperson;
-		this.transactionList = transactionList;
+		this.transactionList = new ArrayList<>();
 	}
 
 	public String getSaleCode() {
@@ -46,6 +47,10 @@ public class Sale {
 
 	public List<Transaction> getTransactionList() {
 		return this.transactionList;
+	}
+	
+	public void addTransaction(Transaction transaction) {
+		this.transactionList.add(transaction);
 	}
 	
 	public Double calculateSubTotal() {
