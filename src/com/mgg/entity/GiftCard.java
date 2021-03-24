@@ -18,8 +18,4 @@ public class GiftCard extends Product{
 	public String getType() {
 		return "PG";
 	}
-
-	public Double getPrice() {
-		return null;
-	}
 }

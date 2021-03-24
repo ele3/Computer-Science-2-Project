@@ -141,4 +141,25 @@ public class Sale {
 		String singleString = sb.toString();
 		return singleString;
 	}
+	
+	
+	/**
+	 * Outputs each individual Sale's information, including sale code, store code,
+	 * customer, salesperson, items, and overall bill in the form of a string.
+	 * @return String singleString
+	 */
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		System.out.printf(this.saleHeader());
+		
+		for (Transaction t : this.getTransactionList()) {
+			sb.append(String.format("%s\n", t.getItem().getName()));
+			sb.append(String.format(t.getFormattedTransaction()));
+		}
+		sb.append(String.format("%s", this.getBillFormat()));
+		
+		String singleString = sb.toString();
+		return singleString;
+	}
 }

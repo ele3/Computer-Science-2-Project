@@ -28,7 +28,10 @@ public abstract class Item {
 		return this.name;
 	}
 	
+	public Double getPrice() {
+		return null;
+	}
+	
 	public abstract String getType();
 	public abstract Double getTax();
-	public abstract Double getPrice();
 }

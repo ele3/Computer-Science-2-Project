@@ -1,5 +1,9 @@
 package com.mgg;
 
+import java.util.ArrayList;
+
+import com.mgg.entity.Sale;
+import com.mgg.reader.Parser;
 import com.mgg.writer.SaleGenerator;
 
 /**
@@ -15,8 +19,13 @@ import com.mgg.writer.SaleGenerator;
 
 public class SalesReport {
 	public static void main(String[] args) {
+		ArrayList<Sale> saleData = Parser.parseSaleData();
+		
 		SaleGenerator.generateSalespersonSummary();
 		SaleGenerator.generateStoreSummary();
-		SaleGenerator.generateEachSaleReport();
+		
+		for (Sale s : saleData) {
+			System.out.println(s);
+		}
 	}
 }

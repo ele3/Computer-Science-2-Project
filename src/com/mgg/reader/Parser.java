@@ -3,6 +3,8 @@ package com.mgg.reader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 import com.mgg.entity.Address;
@@ -17,9 +19,11 @@ import com.mgg.entity.NewProductTransaction;
 import com.mgg.entity.Person;
 import com.mgg.entity.PlatinumCustomer;
 import com.mgg.entity.Sale;
+import com.mgg.entity.Salesperson;
 import com.mgg.entity.Service;
 import com.mgg.entity.ServiceTransaction;
 import com.mgg.entity.Store;
+import com.mgg.entity.StoreSale;
 import com.mgg.entity.Subscription;
 import com.mgg.entity.SubscriptionTransaction;
 import com.mgg.entity.Transaction;
@@ -183,8 +187,7 @@ public class Parser {
 	
 	/**
 	 * Reads the data from the input file, parses them into a Sale, 
-	 * and then returns a Sale ArrayList that is sorted by Customer
-	 * last name in descending alphabetical order.
+	 * and then returns a Sale ArrayList
 	 * @return Sale ArrayList
 	 */
 	public static ArrayList<Sale> parseSaleData() {
@@ -272,6 +275,76 @@ public class Parser {
 			}
 		}
 		return saleData;
+	}
+	
+	/**
+	 * Gets the data required from the Sale data & Person data for a Salesperson
+	 * and returns a sorted Salesperson ArrayList
+	 * @return salespersonData ArrayList
+	 */
+	public static ArrayList<Salesperson> parseSalespersonData() {
+		ArrayList<Salesperson> salespersonData = new ArrayList<>();
+		ArrayList<Person> personData = parsePersonData();
+		ArrayList<Sale> saleData = parseSaleData();
+		Salesperson sp = null;
+		
+		for (Person p : personData) {
+			if(p.getType().equals("E")) {
+				sp = new Salesperson(p);
+				for (Sale s : saleData) {
+					if (p.getPersonCode().equals(s.getSalesperson().getPersonCode())) {
+						sp.addSale(s);
+					}
+				}
+				salespersonData.add(sp);
+			}
+		}
+		
+		Collections.sort(salespersonData, new Comparator<Salesperson>() {
+			public int compare(Salesperson a, Salesperson b) {
+				int flag = a.getPerson().getLastName().compareTo(b.getPerson().getLastName());
+				if (flag != 0) {
+					return flag;
+				}
+				return a.getPerson().getFirstName().compareTo(b.getPerson().getFirstName());
+			}
+		});
+		
+		return salespersonData;
+	}
+	
+	/**
+	 * Gets the data required from the Sale data & Store data for a StoreSale
+	 * and returns a sorted StoreSale ArrayList
+	 * @return StoreSale ArrayList
+	 */
+	public static ArrayList<StoreSale> parseStoreSaleData() {
+		ArrayList<StoreSale> storeSaleData = new ArrayList<>();
+		ArrayList<Store> storeData = parseStoreData();
+		ArrayList<Sale> saleData = parseSaleData();
+		StoreSale ss = null;
+		
+		for (Store st : storeData) {
+			ss = new StoreSale(st);
+			for (Sale s : saleData) {
+				if (s.getStore().getStoreCode().equals(ss.getStore().getStoreCode())) {
+					ss.addSale(s);
+				}
+			}
+			storeSaleData.add(ss);
+		}
+		
+		Collections.sort(storeSaleData, new Comparator<StoreSale>() {
+			public int compare(StoreSale a, StoreSale b) {
+				int flag = a.getStore().getManager().getLastName().compareTo(b.getStore().getManager().getLastName());
+				if (flag != 0) {
+					return flag;
+				}
+				return a.getStore().getManager().getFirstName().compareTo(b.getStore().getManager().getFirstName());
+			}
+		});
+		
+		return storeSaleData;
 	}
 
 }
