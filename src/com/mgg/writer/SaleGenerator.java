@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.mgg.entity.Sale;
 import com.mgg.entity.Salesperson;
 import com.mgg.entity.StoreSale;
-import com.mgg.reader.Parser;
+import com.mgg.reader.DatabaseParser;
 
 /**
  * This class contains all the generator methods needed for
@@ -14,7 +14,7 @@ import com.mgg.reader.Parser;
  * 
  * Date: 03/08/2021
  * CSCE 156 Spring 2021
- * @author Eric Le
+ * @author Eric Le & Brock Melvin
  * 
  */
 
@@ -24,8 +24,8 @@ public class SaleGenerator {
 	 * Additionally, the overall number of sales and grand total is outputted.
 	 */
 	public static void generateSalespersonSummary() {
-		ArrayList<Sale> saleData = Parser.parseSaleData();
-		ArrayList<Salesperson> salespersonData = Parser.parseSalespersonData();
+		ArrayList<Sale> saleData = DatabaseParser.parseSaleData();
+		ArrayList<Salesperson> salespersonData = DatabaseParser.parseSalespersonData();
 		
 		Double saleSummaryGrandTotal = 0.0;
 		int saleSummaryCount = 0;
@@ -53,8 +53,8 @@ public class SaleGenerator {
 	 * 
 	 */
 	public static void generateStoreSummary() {
-		ArrayList<Sale> saleData = Parser.parseSaleData();
-		ArrayList<StoreSale> storeSaleData = Parser.parseStoreSaleData();
+		ArrayList<Sale> saleData = DatabaseParser.parseSaleData();
+		ArrayList<StoreSale> storeSaleData = DatabaseParser.parseStoreSaleData();
 		
 		Double saleSummaryGrandTotal = 0.0;
 		int saleSummaryCount = 0;

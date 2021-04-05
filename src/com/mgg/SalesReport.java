@@ -3,7 +3,7 @@ package com.mgg;
 import java.util.ArrayList;
 
 import com.mgg.entity.Sale;
-import com.mgg.reader.Parser;
+import com.mgg.reader.DatabaseParser;
 import com.mgg.writer.SaleGenerator;
 
 /**
@@ -13,13 +13,13 @@ import com.mgg.writer.SaleGenerator;
  * 
  * Date: 03/08/2021
  * CSCE 156 Spring 2021
- * @author Eric Le
+ * @author Eric Le & Brock Melvin
  * 
  */
 
 public class SalesReport {
 	public static void main(String[] args) {
-		ArrayList<Sale> saleData = Parser.parseSaleData();
+		ArrayList<Sale> saleData = DatabaseParser.parseSaleData();
 		
 		SaleGenerator.generateSalespersonSummary();
 		SaleGenerator.generateStoreSummary();
@@ -27,5 +27,5 @@ public class SalesReport {
 		for (Sale s : saleData) {
 			System.out.println(s);
 		}
-	}
+	} 
 }
