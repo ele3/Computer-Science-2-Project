@@ -31,6 +31,12 @@ import com.mgg.entity.Transaction;
 import com.mgg.entity.UsedProduct;
 import com.mgg.entity.UsedProductTransaction;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.logging.log4j.core.config.DefaultConfiguration;
+
 /**
  * This class loads the data straight from the database and parses said data into
  * an ArrayList of Person, Store, and Item.
@@ -42,6 +48,14 @@ import com.mgg.entity.UsedProductTransaction;
  */
 
 public class DatabaseParser {
+	
+	private static final Logger LOGGER = LogManager.getLogger(DatabaseParser.class);
+
+	static {
+		//Logger being configurated
+		Configurator.initialize(new DefaultConfiguration());
+	    Configurator.setRootLevel(Level.INFO);
+	}
 	
 	/**
 	 * Reads the data from the database, parses them into a Person, 
