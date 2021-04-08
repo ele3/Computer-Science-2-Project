@@ -107,12 +107,16 @@ public class DatabaseParser {
 				else if (type.equals("E")) {
 					personPlaceHolder = new Employee(personCode, lastName, firstName, addressPlaceHolder);
 				}
+				else {
+					LOGGER.warn("Invalid Person Type: " + type);
+				}
 				personData.add(personPlaceHolder);
 			}
 			rs.close();
 			ps.close();
 		}
 		catch(SQLException e) {
+			LOGGER.error(e);
 			throw new RuntimeException(e);
 		}
 		
@@ -133,6 +137,7 @@ public class DatabaseParser {
 				ps.close();
 			}
 			catch(SQLException e) {
+				LOGGER.error(e);
 				throw new RuntimeException(e);
 			}
 		}
@@ -196,6 +201,7 @@ public class DatabaseParser {
 			conn.close();
 		}
 		catch(SQLException e) {
+			LOGGER.error(e);
 			throw new RuntimeException(e);
 		}
 		
@@ -245,6 +251,9 @@ public class DatabaseParser {
 				else if (type.equals("SB")) {
 					itemPlaceHolder = new Subscription(itemCode, name, annualFee);
 				}
+				else {
+					LOGGER.warn("Invalid Item Type: " + type);
+				}
 				itemData.add(itemPlaceHolder);
 			}
 			rs.close();
@@ -252,6 +261,7 @@ public class DatabaseParser {
 			conn.close();
 		}
 		catch(SQLException e) {
+			LOGGER.error(e);
 			throw new RuntimeException(e);
 		}
 		
@@ -316,6 +326,7 @@ public class DatabaseParser {
 			ps.close();
 		}
 		catch(SQLException e) {
+			LOGGER.error(e);
 			throw new RuntimeException(e);
 		}
 		
@@ -373,6 +384,7 @@ public class DatabaseParser {
 				ps.close();
 			}
 			catch(SQLException e) {
+				LOGGER.error(e);
 				throw new RuntimeException(e);
 			}
 		}
