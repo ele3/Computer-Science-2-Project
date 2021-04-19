@@ -286,10 +286,8 @@ public class DatabaseParser {
 		String query = "SELECT s.code AS saleCode, st.code AS storeCode, pc.code AS customerCode, psp.code AS salespersonCode "
 				+ "FROM Sale s "
 				+ "JOIN Store st ON st.storeId = s.storeId "
-				+ "JOIN Customer c ON c.customerId = s.customerId "
-				+ "JOIN Salesperson sp ON sp.salespersonId = s.salespersonId "
-				+ "JOIN Person pc ON pc.personId = c.personId "
-				+ "JOIN Person psp on psp.personId = sp.personId;";
+				+ "JOIN Person pc ON pc.personId = s.customerId "
+				+ "JOIN Person psp on psp.personId = s.salespersonId;";
 		
 		try {
 			ps = conn.prepareStatement(query);
