@@ -104,10 +104,9 @@ public class SaleGenerator {
 		for (Sale s : saleData) {
 			saleList.addSortedElement(s);
 		}
-		
-		//FIX DESIGN (Probably way TOO long) ---- getElementAtIndex is ineffective
-		for(int i = 0; i < saleList.getSize(); i++) {
-			System.out.printf(saleList.getElementAtIndex(i).getSaleSummaryString());
+
+		for (Sale s : saleList) {
+			System.out.printf(s.getSaleSummaryString());
 		}
 	}
 	
@@ -140,10 +139,9 @@ public class SaleGenerator {
 		for (Sale s : saleData) {
 			saleList.addSortedElement(s);
 		}
-		
-		//FIX DESIGN (Probably way TOO long) ---- getElementAtIndex is ineffective
-		for(int i = 0; i < saleList.getSize(); i++) {
-			System.out.printf(saleList.getElementAtIndex(i).getSaleSummaryString());
+
+		for (Sale s : saleList) {
+			System.out.printf(s.getSaleSummaryString());
 		}
 	}
 	
@@ -179,10 +177,9 @@ public class SaleGenerator {
 		for (Sale s : saleData) {
 			saleList.addSortedElement(s);
 		}
-		
-		//FIX DESIGN (Probably way TOO long) ---- getElementAtIndex is ineffective
-		for(int i = 0; i < saleList.getSize(); i++) {
-			System.out.printf(saleList.getElementAtIndex(i).getSaleSummaryString());
+
+		for (Sale s : saleList) {
+			System.out.printf(s.getSaleSummaryString());
 		}
 		
 	}

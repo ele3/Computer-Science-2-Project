@@ -1,6 +1,8 @@
 package com.mgg.entity;
 
 import java.util.Comparator;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * This class represents a Linked List and utilizes the Node class,
@@ -12,7 +14,7 @@ import java.util.Comparator;
  * 
  */
 
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<T> {
 	private Node<T> head;
 	private int size;
 	private final Comparator<T> cmp;
@@ -245,5 +247,43 @@ public class LinkedList<T> {
 			this.size--;
 		}
 		return;
+	}
+	
+	public Iterator<T> iterator() {
+		return new LinkedListIterator(head, this.getNodeAtIndex(size));
+	}
+	
+	/**
+	 * Establishes Iterator for LinkedList that allows an enhanced loop
+	 */
+	private class LinkedListIterator implements Iterator<T> {
+		private Node<T> cursor;
+		private Node<T> end;
+		
+		public LinkedListIterator(Node<T> head, Node<T> end) {
+			this.cursor = head;
+			this.end = end;
+		}
+		
+		public boolean hasNext() {
+			if(this.cursor != this.end) {
+				return true;
+			}   else {
+				return false;
+			}
+		}
+		
+		public T next() {
+			if(this.hasNext()) {
+				Node<T> current = cursor;
+				cursor = cursor.getNext();
+				return current.getElement();
+			}
+			throw new NoSuchElementException();
+		}
+		
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
 	}
 }
