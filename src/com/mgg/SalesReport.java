@@ -1,9 +1,5 @@
 package com.mgg;
 
-import java.util.ArrayList;
-
-import com.mgg.entity.Sale;
-import com.mgg.reader.DatabaseParser;
 import com.mgg.writer.SaleGenerator;
 
 /**
@@ -19,13 +15,18 @@ import com.mgg.writer.SaleGenerator;
 
 public class SalesReport {
 	public static void main(String[] args) {
-		ArrayList<Sale> saleData = DatabaseParser.parseSaleData();
+		//The commented code below is what is used to produce the Sales Summary Report Pre-Assignment 7
+//		ArrayList<Sale> saleData = DatabaseParser.parseSaleData();
+//		
+//		SaleGenerator.generateSalespersonSummary();
+//		SaleGenerator.generateStoreSummary();
+//		
+//		for (Sale s : saleData) {
+//			System.out.println(s);
+//		}
 		
-		SaleGenerator.generateSalespersonSummary();
-		SaleGenerator.generateStoreSummary();
-		
-		for (Sale s : saleData) {
-			System.out.println(s);
-		}
+		SaleGenerator.generateSalesByCustomer();
+		SaleGenerator.generateSalesByTotal();
+		SaleGenerator.generateSalesByStore();
 	} 
 }

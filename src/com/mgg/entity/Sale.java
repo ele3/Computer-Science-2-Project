@@ -162,4 +162,23 @@ public class Sale {
 		String singleString = sb.toString();
 		return singleString;
 	}
+	
+	/**
+	 * Builds a formatted sale summary string that includes the sale code, store code,
+	 * customer name, sales person name, and the grand total of the sale.
+	 * @return
+	 */
+	public String getSaleSummaryString() {
+		StringBuilder sb = new StringBuilder();
+		
+		String customerName = this.getCustomer().getLastName() + ", " + this.getCustomer().getFirstName();
+		String salespersonName = this.getSalesperson().getLastName() + ", " + this.getSalesperson().getFirstName();
+		String storeCode = this.getStore().getStoreCode();
+		Double grandTotal = this.calculateGrandTotal();
+		sb.append(String.format("%-10s %-10s %-20s %-20s $%10.2f\n", this.saleCode, storeCode, customerName, salespersonName, grandTotal));
+		
+		String singleString = sb.toString();
+		
+		return singleString;
+	}
 }
