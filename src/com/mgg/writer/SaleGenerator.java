@@ -83,9 +83,9 @@ public class SaleGenerator {
 	 */
 	public static void generateSalesByCustomer() {
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("| Sales by Customer                                                       |");
+		System.out.println("| Sales by Customer                                                       |");
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("Sale       Store      Customer             Salesperson          Total");
+		System.out.println("Sale       Store      Customer             Salesperson          Total");
 		
 		Comparator<Sale> cmp = new Comparator<Sale>() {
 			public int compare(Sale a, Sale b) {
@@ -115,9 +115,9 @@ public class SaleGenerator {
 	 */
 	public static void generateSalesByTotal() {
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("| Sales by Total                                                          |");
+		System.out.println("| Sales by Total                                                          |");
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("Sale       Store      Customer             Salesperson          Total");
+		System.out.println("Sale       Store      Customer             Salesperson          Total");
 		
 		Comparator<Sale> cmp = new Comparator<Sale>() {
 			public int compare(Sale a, Sale b) {
@@ -151,9 +151,9 @@ public class SaleGenerator {
 	 */
 	public static void generateSalesByStore() {
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("| Sales by Store                                                          |");
+		System.out.println("| Sales by Store                                                          |");
 		System.out.println("+-------------------------------------------------------------------------+");
-		System.out.println("Sale       Store      Customer             Salesperson          Total");
+		System.out.println("Sale       Store      Customer             Salesperson          Total");
 		
 		Comparator<Sale> cmp = new Comparator<Sale>() {
 			public int compare(Sale a, Sale b) {
