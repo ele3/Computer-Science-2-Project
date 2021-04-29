@@ -90,7 +90,7 @@ public class LinkedList<T> implements Iterable<T> {
 	 * Adds a given element to the start of the list
 	 * @param x
 	 */
-	public void addToStart(T x) {
+	private void addToStart(T x) {
 		Node<T> newHead = new Node<T>(x);
 		newHead.setNext(this.head);
 		this.head = newHead;
@@ -102,7 +102,7 @@ public class LinkedList<T> implements Iterable<T> {
 	 * Adds a given element to the end of the list
 	 * @param x
 	 */
-	public void addToEnd(T x) {
+	private void addToEnd(T x) {
 		if(this.isEmpty()) {
 			addToStart(x);
 			return;
@@ -115,27 +115,6 @@ public class LinkedList<T> implements Iterable<T> {
 		previous.setNext(newNode);
 		this.size++;
 		return;
-	}
-	
-	/**
-	 * Adds a given element to a provided index
-	 * @param x, index
-	 */
-	public void addElementAtIndex(T x, int index) {
-		if (index < 0 || index > size) {
-			throw new IllegalArgumentException("index " + index + " is out of bounds");
-		}
-		if (index == 0) {
-			this.addToStart(x);
-		} else {
-			Node<T> previous = this.getNodeAtIndex(index - 1);
-			Node<T> current = previous.getNext();
-			Node<T> newNode = new Node<T>(x);
-			newNode.setNext(current);
-			previous.setNext(newNode);
-			this.size++;
-			return;
-		}
 	}
 	
 	/**
@@ -231,7 +210,7 @@ public class LinkedList<T> implements Iterable<T> {
 	 * Removes an element at a provided index
 	 * @param index
 	 */
-	public void removeElementAtIndex(int index) {
+	private void removeElementAtIndex(int index) {
 		if(index < 0 || index > this.size) {
 			throw new IllegalArgumentException ("Index " + index + " out of " + this.size + " is out of bounds!");
 		}
