@@ -1,5 +1,5 @@
 # Project
-## CSCE 156
+## Computer Science 2
 
 Eric Le, NUID: 35975942, ele3@huskers.unl.edu
 
