@@ -4,6 +4,7 @@ This database-backed sales system is designed to replace the old collection of E
 ## Details of the entire project
 The scope of the project, overall design description detailing phases, database design, class models, components, and overall approaches are all described in the Design Document pdf located in the **Design Document** folder.
 
+## Members
 Eric Le, NUID: 35975942, ele3@huskers.unl.edu
 
 Brock Melvin, NUID 97524413, bmelvin9@huskers.unl.edu
